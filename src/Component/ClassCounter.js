@@ -10,7 +10,7 @@ class ClassCounter extends Component {
     handleClick=()=>{
         this.setState({      
             count:this.state.count+1
-        })          
+        })                                     
     }              
   render() {
     return (    
@@ -18,8 +18,8 @@ class ClassCounter extends Component {
        <p>{this.state.count}</p>
         <button onClick={this.handleClick}>Click</button>
       </div>
-    )
+    )    
   }
-}
-
-export default ClassCounter
+}  
+export default ClassCounter        
+ 

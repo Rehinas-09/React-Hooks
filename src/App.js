@@ -1,8 +1,10 @@
 
+import React from 'react';
 import './App.css';
 import ClassCounter from './Component/ClassCounter';
 import ClassCounterOne from './Component/ClassCounterOne';
 import ClassMouse from './Component/ClassMouse';
+import ComponentC from './Component/ComponentC';
 import Datafetching from './Component/Datafetching';
 import ExampleOfUseState from './Component/ExampleOfUseState';
 import FetchData from './Component/FetchData';
@@ -15,8 +17,18 @@ import HookMouse from './Component/HookMouse';
 import IntervalClassCounter from './Component/IntervalClassCounter';
 import IntervalHookCounter from './Component/IntervalHookCounter';
 import MouseContainer from './Component/MouseContainer';
-
-function App() {
+// export const UserContext=React.createContext()
+// export const ChannelContext=React.createContext()
+import userContext  from './Component/UserContext';
+import ProfileClass from './Component/ProfileClass';
+import CounterOne from './Component/CounterOne';
+import CounterTwo from './Component/CounterTwo';
+ 
+function App() {    
+  // const user={
+  //   name:"Rehi",
+  //   email:'rehinas@example.com'
+  // }  
   return (
     <div className="App">
       {/* <ClassCounte   r/>   */}  
@@ -27,18 +39,27 @@ function App() {
         {/* <HookCounterOne/>   */}
       {/* <HookCounterOne/>  */}   
       {/* <ClassCounterOne/> */}  
-      <ClassMouse/> 
+      {/* <ClassMouse/>  */}
       {/* <HookMouse/> */}
       {/* <MouseContainer/> */}
       {/* <IntervalClassCounter/> */}
       {/* <IntervalHookCounter/> */}
-      {/* <ExampleOfUseState/> */}
-       {/* <Datafetching/>  */}
-      {/* <FetchData/> */}
-      {/* <ExampleOfUseState/> */}
-    </div>                      
-  );                                 
-}              
-                                              
-export default App;     
-                                                                                                                      
+      {/* <ExampleOfUseState/> */}  
+       {/* <Datafetching/>  */}                
+      {/* <FetchData/> */}     
+      {/* <ExampleOfUseState/> */}  
+       {/* <UserContext.Provider value={'rehinas'}>  
+        <ChannelContext.Provider value={'ajmal'}>
+                  <ComponentC/>       
+        </ChannelContext.Provider>   
+       </UserContext.Provider> */}
+       {/* <userContext.Provider value={user}>
+        <ProfileClass/>
+       </userContext.Provider> */}
+         {/* <CounterOne/>                                      */}
+         <CounterTwo/>
+    </div>                       
+  );                                   
+}                       
+export default App;       
+                            
