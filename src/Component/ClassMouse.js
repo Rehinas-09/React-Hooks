@@ -17,11 +17,10 @@ export class ClassMouse extends Component {
   render() {
    
     return (
-      <div>
+      <div> 
         X-{this.state.x} Y-{this.state.y}
       </div>  
     )
-  }
+  }    
 }
-
 export default ClassMouse

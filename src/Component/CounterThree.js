@@ -13,8 +13,9 @@ const reducer=(state,action)=>{
             return state               
     }                 
 }               
-function CounterOne() {
-    const [count,dispatch]=useReducer(reducer,initialValue)         
+function CounterThree() {
+    const [count,dispatch]=useReducer(reducer,initialValue) 
+    const [counterTwo,dispatchTwo]=useReducer(reducer,initialValue)        
     
   return (   
     <div>
@@ -22,9 +23,11 @@ function CounterOne() {
        <button onClick={()=>dispatch('increment')}>Increment</button>
        <button onClick={()=>dispatch('decrement')}>Decrement</button>    
        <button onClick={()=>dispatch('reset')}>Reset</button>     
-    </div>
-  )                 
-}                   
-
-export default CounterOne
-         
+              <div>Counter Two:{counterTwo}</div>
+       <button onClick={()=>dispatchTwo('increment')}>Increment</button>
+       <button onClick={()=>dispatchTwo('decrement')}>Decrement</button>    
+       <button onClick={()=>dispatchTwo('reset')}>Reset</button>   
+    </div>       
+  )                  
+}                      
+export default CounterThree

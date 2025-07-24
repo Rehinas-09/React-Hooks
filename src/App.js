@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useReducer } from 'react';
 import './App.css';
 import ClassCounter from './Component/ClassCounter';
 import ClassCounterOne from './Component/ClassCounterOne';
@@ -23,22 +23,56 @@ import userContext  from './Component/UserContext';
 import ProfileClass from './Component/ProfileClass';
 import CounterOne from './Component/CounterOne';
 import CounterTwo from './Component/CounterTwo';
+import CounterThree from './Component/CounterThree';
+import Ca from './Component/Ca';
+import Cd from './Component/Cd';
+import Cb from './Component/Cb';
+import Cc from './Component/Cc';
+import UseReducer from './Component/UseReducer';
+import TodoList from './Component/TodoList';
+import DataFetchingOne from './Component/DataFetchingOne';
+import DtaFetchingTwo from './Component/DtaFetchingTwo';
+import ParentComponent from './Component/ParentComponent';
+import Parent from './Component/Parent';
+import Counter2 from './Component/Counter2';
+import FocusInput from './Component/FocusInput';
+import ClassTimer from './Component/ClassTimer';
+import HookTimer from './Component/HookTimer';
+import AccessDom from './Component/AccessDom';
+import DocTitle from './Component/DocTitle';
+import DocTitleTwo from './Component/DocTitleTwo';
+import COne from './Component/COne';
+import CTwo from './Component/CTwo';
+
+// export const countContext=React.createContext()
+// const initialState=0
+// const reducer=(state,action)=>{ 
+//   switch(action){
+//      case `incremnet`:
+//       return state+1
+//      case `decrement`:
+//       return state-1
+//      case `reset`:
+//       return initialState
+//       default: 
+//         return state
+//   }
+// }  
  
-function App() {    
-  // const user={
-  //   name:"Rehi",
-  //   email:'rehinas@example.com'
-  // }  
-  return (
+function App() {         
+//    const [count,dispatch]=useReducer(reducer,initialState)
+    
+  return (  
+    // <countContext.Provider vlaue={{countState:count,countDispatch:dispatch}}>
     <div className="App">
-      {/* <ClassCounte   r/>   */}  
+      {/* <ClassCounte   r/>   */}   
        {/* <HookCounter2/>  */}
        {/* <HookCounterThree/>    */}
         {/* <HookCounterFour/>     */}
          {/* <ClassCounterOne/>   */}
         {/* <HookCounterOne/>   */}
-      {/* <HookCounterOne/>  */}   
-      {/* <ClassCounterOne/> */}  
+      {/* <HookCounterOne/>  */}        
+      {/* <ClassCounterOne/> */}   
       {/* <ClassMouse/>  */}
       {/* <HookMouse/> */}
       {/* <MouseContainer/> */}
@@ -57,9 +91,37 @@ function App() {
         <ProfileClass/>
        </userContext.Provider> */}
          {/* <CounterOne/>                                      */}
-         <CounterTwo/>
-    </div>                       
-  );                                   
-}                       
-export default App;       
-                            
+         {/* <CounterTwo/> */}
+         {/* <CounterThree/> */}
+         {/* <countContext.Provider value={{countSate:count,countDispatch:dispatch}}>
+         <Ca/>        
+         <Cb/>      
+         <Cc/>
+         </countContext.Provider> */}
+        {/* <useReducer/> */}
+         {/* <UseReducer/> */}
+         {/* <TodoList/> */}               
+         {/* <CounterOne/> */}      
+         {/* <CounterTwo/> */}
+         {/* <CounterThree/> */}
+         {/* <Ca/> 
+         <Cb/>
+         <Cc/> */}
+         {/* <DataFetchingOne/> */}
+         {/* <DtaFetchingTwo/> */}
+         {/* <ParentComponent/> */}
+         {/* <Parent/>    */}
+         {/* <Counter2/> */}
+         {/* <FocusInput/> */}
+         {/* <ClassTimer/>  */}
+         {/* <HookTimer/> */}
+         {/* <AccessDom/> */}
+         {/* <DocTitle/>
+         <DocTitleTwo/> */}
+         <COne/>
+         <CTwo/>   
+           </div>     
+    // </countContext.Provider>                        
+  );                                     
+}  
+export default App;    

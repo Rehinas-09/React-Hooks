@@ -14,9 +14,9 @@ function HookMouse() {
     })
   return ( 
     <div>          
-        X-{x} Y-{y} 
-    </div>                     
-  )
-}                                                                           
-export default HookMouse
-             
+        X-{x} Y-{y}
+    </div>               
+  )              
+}                                                                            
+export default HookMouse            
+                           
