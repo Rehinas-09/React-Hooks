@@ -43,6 +43,7 @@ import DocTitle from './Component/DocTitle';
 import DocTitleTwo from './Component/DocTitleTwo';
 import COne from './Component/COne';
 import CTwo from './Component/CTwo';
+import UserForm from './Component/UserForm';
 
 // export const countContext=React.createContext()
 // const initialState=0
@@ -116,10 +117,11 @@ function App() {
          {/* <ClassTimer/>  */}
          {/* <HookTimer/> */}
          {/* <AccessDom/> */}
-         {/* <DocTitle/>
+         {/* <DocTitle/>  
          <DocTitleTwo/> */}
-         <COne/>
-         <CTwo/>   
+         {/* <COne/>  
+         <CTwo/*/}
+         <UserForm/>
            </div>     
     // </countContext.Provider>                        
   );                                     
